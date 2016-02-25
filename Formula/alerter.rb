@@ -15,11 +15,10 @@ class Alerter < Formula
     xcodebuild "-project", "alerter.xcodeproj",
                "-target", "alerter",
                "SYMROOT=build",
-               "-verbose"
-    prefix.install Dir["build/Release/*"]
-    #inner_binary = "#{prefix}/terminal-notifier.app/Contents/MacOS/terminal-notifier"
-    #bin.write_exec_script inner_binary
-    chmod 0755, bin/"alerter"
+               "-verbose",
+               "CODE_SIGN_IDENTITY=",
+               "CODE_SIGNING_REQUIRED=NO"
+    bin.install "build/Release/alerter"
   end
 
   test do
