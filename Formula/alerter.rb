@@ -1,5 +1,3 @@
-require "formula"
-
 class Alerter < Formula
   desc "Send User Alert Notification on Mac OS X 10.8 from the command-line."
   homepage "https://github.com/vjeantet/alerter"
