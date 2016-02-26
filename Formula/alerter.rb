@@ -1,5 +1,5 @@
 class Alerter < Formula
-  desc "Send User Alert Notification on Mac OS X 10.8 from the command-line."
+  desc "Send MacOS X User Alert Notifications via command-line"
   homepage "https://github.com/vjeantet/alerter"
   url "https://github.com/vjeantet/alerter/archive/1.0.tar.gz"
   sha256 "d2db8c86aa441306829f286bf815c88102e186237bdcda40993db8a8441b5f7c"
