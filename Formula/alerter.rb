@@ -6,6 +6,13 @@ class Alerter < Formula
 
   head "https://github.com/vjeantet/alerter.git"
 
+  bottle do
+    root_url "https://github.com/tmaher/homebrew-alerter/releases/download/1.0.0"
+    cellar :any_skip_relocation
+    sha256 "71a7f5eb0483dcbabca5caceb95cccae0a67deec6a38a432162f5d80b327535c" => :yosemite
+    sha256 "50c5aab811866c6bc00912916f1c05c18d25bbecfd1bc3dd155df0fd093168fc" => :el_capitan
+  end
+
   depends_on :macos => :mountain_lion
   depends_on :xcode => :build
 
