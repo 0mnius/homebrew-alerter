@@ -2,7 +2,7 @@ class Alerter < Formula
   desc "Send MacOS X User Alert Notifications via command-line"
   homepage "https://github.com/vjeantet/alerter"
   url "https://github.com/vjeantet/alerter/archive/1.0.tar.gz"
-  sha256 "d2db8c86aa441306829f286bf815c88102e186237bdcda40993db8a8441b5f7c"
+  sha256 "c16fb6e1937317ed75b707b56bca3f92843665a7824885c1ddcf302accc9bf5b"
 
   head "https://github.com/vjeantet/alerter.git"
 
@@ -13,7 +13,7 @@ class Alerter < Formula
     sha256 "50c5aab811866c6bc00912916f1c05c18d25bbecfd1bc3dd155df0fd093168fc" => :el_capitan
   end
 
-  depends_on :macos => :mountain_lion
+  depends_on :macos => :mavericks
   depends_on :xcode => :build
 
   def install
